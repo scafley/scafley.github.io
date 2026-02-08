@@ -1,6 +1,6 @@
 # Portfolio Flutter Dev - Dominik Nalepa
 
-Portfolio Flutter Dev.
+Portfolio Flutter Dev
 
 ## Author
 
