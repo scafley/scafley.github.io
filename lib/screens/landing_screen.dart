@@ -153,7 +153,7 @@ class _PortfolioPageState extends State<PortfolioPage>
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "© 2026 Dominik Nalepa • 100% Flutter Web ",
+                  "© 2026 Dominik Nalepa • 100% Flutter Web",
                   style: TextStyle(color: Colors.white54, fontSize: 12),
                 ),
                 FlutterLogo(size: 16),
