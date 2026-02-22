@@ -19,26 +19,18 @@ jobs:
           flutter-version: '3.38.7'
           channel: 'stable'
       
-      - name: Install dependencies (main)
+      - name: Install dependencies
         run: flutter pub get
       
       - name: Build main app
         run: flutter build web --release --base-href "/"
 
-      - name: Install dependencies (crud app)
-        working-directory: ./flutter-crud-app
-        run: flutter pub get
-
-      - name: Build crud app
-        working-directory: ./flutter-crud-app
-        run: flutter build web --release --base-href "/flutter-crud-app/"
-      
       - name: Prepare deploy folder
         run: |
           mkdir -p deploy
           cp -r build/web/. deploy/
           mkdir -p deploy/flutter-crud-app
-          cp -r flutter-crud-app/build/web/. deploy/flutter-crud-app/
+          cp -r flutter-crud-app/. deploy/flutter-crud-app/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
