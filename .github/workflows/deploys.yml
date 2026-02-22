@@ -24,6 +24,10 @@ jobs:
       
       - name: Build web
         run: flutter build web --release --base-href "/"
+
+      - name: Build second app
+        working-directory: ./flutter-crud-app
+        run: flutter build web --release --base-href "/flutter-crud-app/"
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
