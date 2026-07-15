@@ -37,7 +37,7 @@ class AboutSection extends StatelessWidget {
           _SkillItem(
             title: 'Flutter',
             description:
-                'Creating UI based on Figma designs, REST API integration (Dio/Http), Riverpod, animations (Rive), Flutter-Unity, shared_preferences, OneSignal, BLoC (basics)',
+                'Creating UI based on Figma designs, REST API integration (Dio/Http), Riverpod, animations (Rive), Flutter-Unity, shared_preferences, OneSignal, BLoC',
           ),
           _SkillItem(
             title: 'Web',
