@@ -27,15 +27,31 @@ class ProjectsSection extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8),
-          Text(
-            'Side projects showcasing modern Flutter architecture and best practices.',
-            style: TextStyle(color: Colors.white70, fontSize: 14),
+          //Text('', style: TextStyle(color: Colors.white70, fontSize: 14)),
+          _PersonalProjectCard(
+            title: 'Movie Explorer',
+            description:
+                'A single-page application for browsing, searching and saving fav movies, built with Angular 21 and the TMDB API.',
+            technologies: [
+              'Angular 21',
+              'RxJS',
+              'HttpClient + TMDB API',
+              'Tailwind',
+              'SCSS',
+              "Unit tests (Vitest)",
+              "ESLint",
+              "localStorage",
+            ],
+            liveUrl: 'https://movie-explorer-scafley.netlify.app/',
+            githubUrl: 'https://github.com/scafley/movie-explorer',
+            color: Colors.greenAccent,
+            onLaunchURL: _launchURL,
           ),
           SizedBox(height: 24),
           _PersonalProjectCard(
             title: 'Flutter CRUD App',
             description:
-                'CRUD app with authentication and search. BLoC + Repository pattern. DummyJSON API demo.',
+                'CRUD app with authentication and search. BLoC + Repśository pattern. DummyJSON API demo.',
             technologies: [
               'Flutter',
               'BLoC',
@@ -68,6 +84,63 @@ class ProjectsSection extends StatelessWidget {
             ),
           ),
           SizedBox(height: 24),
+          Text(
+            'Angular',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 16),
+          _ProjectCard(
+            title: 'Admin Panel (CMS)',
+            description:
+                'A content management system featuring user and role management, interactive data tables, dynamic forms, and a news module with image upload, cropping, and thumbnail management.',
+            technologies: [
+              'Angular',
+              'PrimeNG',
+              'SCSS',
+              'REST API',
+              'Image Cropper',
+              'FormData',
+              'Local Storage',
+            ],
+            color: Colors.redAccent,
+          ),
+
+          _ProjectCard(
+            title: 'Art Gallery',
+            description:
+                'A responsive portfolio website showcasing artwork organized into categories, featuring multilingual support and a contact form for custom order inquiries.',
+            technologies: ['Angular', 'SCSS', 'REST API', 'Local Storage'],
+            color: Colors.tealAccent,
+          ),
+
+          _ProjectCard(
+            title: 'E-learning App',
+            description:
+                'Contributed to a legacy e-learning platform by implementing new features, supporting multiple themes, maintaining existing functionality, and resolving bugs.',
+            technologies: [
+              'Angular',
+              'SCSS',
+              'Bootstrap',
+              'REST API',
+              'Git',
+              "Material Design",
+            ],
+            color: Colors.amberAccent,
+          ),
+          SizedBox(height: 24),
+          Text(
+            'Flutter',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 16),
           _ProjectCard(
             title: 'E-learning Application',
             description:

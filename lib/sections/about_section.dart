@@ -20,7 +20,8 @@ class AboutSection extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Text(
-            'Graduate of Computer Science at the Pedagogical University in Krakow with over 3 years of commercial experience in creating mobile applications in Flutter. Previously worked on web applications using Angular framework. In commercial projects, I was responsible for implementing frontend functionalities, creating responsive user interfaces and API integration. Ready to take on new challenges immediately.',
+            'Computer Science graduate from the Pedagogical University of Krakow with over 3 years of commercial experience developing mobile applications in Flutter. Prior to and alongside Flutter development, I also worked on web applications using Angular. My commercial experience includes implementing frontend features, building responsive user interfaces, integrating REST APIs, and collaborating on the development and maintenance of production applications. I am available to take on new challenges immediately.',
+
             style: TextStyle(color: Colors.white70, fontSize: 16, height: 1.6),
           ),
           SizedBox(height: 32),
@@ -41,11 +42,12 @@ class AboutSection extends StatelessWidget {
           _SkillItem(
             title: 'Web',
             description:
-                'HTML5, CSS/SCSS, Bootstrap, Angular, TypeScript/JavaScript',
+                'HTML5, Angular, TypeScript/JavaScript, CSS/SCSS, Tailwind, Bootstrap, PrimeNG, MaterialUI, Vue/Nuxt (basics)',
           ),
           _SkillItem(
             title: 'Tools',
-            description: 'Git/SVN, Postman, Figma, VS Code, Photoshop',
+            description:
+                'Git/SVN, Postman, Figma, VS Code, Docker (basics), Photoshop',
           ),
           SizedBox(height: 32),
           Text(

@@ -29,7 +29,7 @@ class PortfolioProjectsSection extends StatelessWidget {
           ),
           SizedBox(height: 8),
           Text(
-            'Side projects showcasing modern Flutter architecture and best practices.',
+            'Side projects showcasing modern Flutter/Angular architecture and best practices.',
             style: TextStyle(color: Colors.white70, fontSize: 14),
           ),
           SizedBox(height: 24),
